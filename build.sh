@@ -33,8 +33,7 @@ if [ -x "$(command -v git)" ]; then
   git clone $arg_q https://github.com/zsh-users/zsh-history-substring-search $ohmyzsh_home/plugins/zsh-history-substring-search
   git clone $arg_q https://github.com/zsh-users/zsh-autosuggestions $ohmyzsh_home/plugins/zsh-autosuggestions
   git clone $arg_q https://github.com/zsh-users/zsh-syntax-highlighting.git $ohmyzsh_home/plugins/zsh-syntax-highlighting
-  git clone $arg_q https://github.com/denysdovhan/spaceship-prompt.git $ohmyzsh_home/themes/spaceship-prompt
-  ln -s "$ohmyzsh_home/themes/spaceship-prompt/spaceship.zsh-theme" "$ohmyzsh_home/themes/spaceship.zsh-theme"
+  git clone $arg_q https://github.com/denysdovhan/spaceship-prompt.git $ohmyzsh_home/themes
 else
   echo Install git
   exit 1
